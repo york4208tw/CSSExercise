@@ -1,0 +1,418 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*使全部盒模型的大小不須經過 padding及border 的計算
+*, *:before, *:after{
+    box-sizing: border-box;
+}*/
+/*CSS Reset 結束*/
+
+.container {
+  max-width: 940px;
+  margin: 0px auto;
+}
+/*字體*/
+.nav-right a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 41.26px;
+  margin-left: 60px;
+}
+.select {
+  font-size: 24px;
+}
+.tag-best {
+  margin-top: 9px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+.dessert-cards ul,.pages{
+  font-size: 20px;
+}
+.dessert-cards button{
+  font-size: 24px;
+}
+img{
+  display: block;
+}
+
+/*nav*/
+nav {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left img {
+  width: 200px;
+}
+.nav-right{
+  display:flex;
+  align-items:center;
+}
+.nav-right li{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav-right img{
+  height: 24px;
+}
+
+/*banner*/
+.banner img{
+  width:100%;
+  margin-bottom: 60px;
+}
+/*menu*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+/*select*/
+.select {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  color: #3F5D45;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.select li:first-child{
+  background-color: #3f5d45;
+  color: white;
+}
+.select li {
+  border:solid 1px #EAF0ED;
+}
+.select a{
+  display: block;
+   padding: 16px 0px;
+}
+/*card*/
+.dessert-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.card {
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+}
+.card-pic {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  
+}
+.tag {
+  margin: 0px auto 0px 20px;
+  padding-top: 2px;
+  color: white;
+  width: 36px;
+  height: 106.73px;
+  background-color: #3f5d45;
+}
+.dessert-cards img {
+  max-width: 20px;
+  height: 20px;
+  margin-top: 19px;
+  margin-right: 22px;
+}
+
+.dessert-cards ul{
+  margin-top: 208px;
+  border-right:1px solid #EAF0ED;
+  border-left: 1px solid #EAF0ED;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dessert-cards ul :first-child{
+  padding: 14px 34px;
+  border-right: 1px solid #EAF0ED;
+}
+.dessert-cards li{
+   padding: 14px 20px;
+}
+.dessert-cards button{
+  background-color: #EAF0ED;
+  padding:0px 83px;
+  border:none;
+  height: 65px;
+  text-align:center;
+  align-items: center;
+}
+/*pages*/
+.pages{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+.pages a{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:  1px solid #EAF0ED;
+}
+.pages img{
+  max-width: 24px;
+  height: 24px;
+}
+
+/*subscribe*/
+.subscribe{
+  display:flex;
+  flex-flow: row wrap;
+  align-items:center;
+  background-color:#3F5D45;
+  margin:60px auto 0px;
+  padding:30px 250px;
+  justify-content:space-between;
+}
+.subscribe p{
+  font-family:Helvetica Neue;
+  font-size:24px;
+  color:#EAF0ED;
+}
+.subscribe-logo{
+  display:flex;
+  align-items:center;
+}
+.subscribe-logo img{
+  width:40px;
+  margin-right:20px;
+}
+.subscribe-input{
+  position:relative;
+}
+.subscribe-input .img-1{
+  width: 24px;
+  height: 24px;
+  z-index:10;
+  left:20px;
+  top:16px;
+  position:absolute;
+}
+.subscribe-input button{
+  width: 64px;
+  height: 56px;
+  background-color:#FFE180;
+  border:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px 24px;
+  z-index:10;
+  right:0px;
+  top:0px;
+  position:absolute;
+}
+.subscribe-input input{
+  z-index:-10;
+}
+/*footer*/
+.footer{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  background-color:#EAF0ED;
+  padding:0px 250px 0px;
+  margin:0px auto;
+}
+
+.footer-left img{
+  width:200px;
+  margin:41px 0px 115.5px;
+}
+.contact{
+  margin-bottom:30px;
+}
+.contact li{
+  line-height:32px;
+  font-family:Helvetica Neue;
+  font-size:20px;
+}
+.links{
+  display:flex;
+  padding-bottom:20px;
+}
+.links img{
+  width:50px;
+  padding-right:8px;
+  margin:0px; /*清掉才不會下方留白!*/
+}
+/*footer-right*/
+.vertical-mode {
+  writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;   
+  writing-mode: vertical-rl;
+  font-family: PMingLiU;
+  font-size:24px;
+  line-height:36px;
+  font-weight: bold;
+  margin:30px 0px 20px auto;
+}
+/*hide-nav*/
+.hide-nav {
+  display:none;
+}
+.hide-nav button{
+  background-color:white;
+  border:none;
+}
+.hide-nav img:nth-child(2){
+  width:130px;
+}
+.hide-nav img:nth-child(2n+1){
+  width:28px;
+}
+.hide-nav-ul{
+  display:none;
+}
+
+/*hover效果*/
+.select li:hover,.pages a:hover{
+  background-color:#EAF0ED;
+  transition: 0.5s ;
+}
+.card-text button:hover{
+  color: white;
+  background-color: #3f5d45 ;
+  transition: 0.5s ;
+}
+
+/*放大效果*/
+.nav-right a:hover {
+font-size: 24px;
+line-height: 37.26px;
+margin-left: 53px;
+}
+
+.nav-right img:hover{
+transform: scale(1.5);
+line-height: 37.26px;
+margin-left: 8px;
+}
+.nav-right img{
+transition: transform .2s;
+}
+
+
+/*RWD*/
+@media(max-width:768px){
+
+ .container,.menu,.dessert-cards,.subscribe{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+  }
+  .hide-nav {
+    display:block;
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:33px;
+  }
+  
+  nav,.vertical-mode{
+    display:none;
+  }
+  .dessert-cards{
+    margin-top:30px;
+  }
+  .banner img{
+    margin:0px auto;
+  }
+  .select,.select li{
+    width:100%;
+    margin-right:0px;
+  }
+  .pages{
+   justify-content: center;
+  }
+  .subscribe{ 
+   margin:30px 0px 0px 0px;
+   padding:30px 30px;
+  }
+  .subscribe-input{
+   margin:30px 0px 0px 0px;
+   max-width:90%;
+  }
+  input{
+   max-width:90%;
+  }
+  .footer{
+    float:left;
+    padding-left:30px;
+  }
+  .footer-left{
+    margin-left:0px;
+  }
+  .footer-left img{
+    margin-bottom:40px;
+  }
+  .contact{
+  margin-bottom:20px;
+  }
+  .footer-right{
+    padding-right:0px;
+  }
+  .footer-right p{
+    padding:20px 0px;
+  }
+}

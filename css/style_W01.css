@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*使全部盒模型的大小不須經過 padding及border 的計算
+*, *:before, *:after{
+    box-sizing: border-box;
+}*/
+/*CSS Reset 結束*/
+
+html {
+	font-family: '微軟正黑體';
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+	/* border: 1px solid blue; */
+}
+h1 {
+	font-size: 80px;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #000;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 5px solid #000;
+}
+h2 span{
+	margin-left: 20px;
+	font-weight: bold;
+	color: #A00404;
+}
+.container img {
+	border-radius: 10000px;
+	box-shadow: 0 0 10px rgba(0,0,0,1.00);
+}
+li {
+	font-size: 30px;
+	padding: 10px 0;
+}
+.skill{
+	background-color: #415165;
+	text-align: center;
+	color: white;
+	padding-bottom: 25px;
+}
+.skill h2 {
+	width: 85%;
+	margin: 50px auto 20px auto;
+	padding: 25px;
+	border-bottom: 5px solid white;
+}
+.skill h2 span {
+	color: white;
+}
+.skill ul{
+	width: 50%;
+}
+.skill li{
+	width: 70%;
+	margin: 0 auto;
+	text-align: left;
+	padding-left: 25px;
+	border-left: 2px solid white;
+}
+.skills{
+	display: flex;
+}
+.footer{
+	background-color: #415165;
+	text-align: center;
+	color: white;
+	padding-bottom: 25px;
+}
+.footer h2{
+	width: 80%;
+	margin: 50px auto 20px auto;
+	padding: 25px;
+	border-bottom: 5px solid white;
+}
+.footer h2 span {
+	color: white;
+}
+a{
+	color: rgb(249, 250, 170);
+	text-decoration: none;
+}
+.links{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 200px;
+	margin: 20px auto;
+}
+.link{
+	width: 65px;
+}
+.product ul{
+	display: flex;
+	justify-content: space-between;
+}
+.product li p{
+	margin-bottom: 15px;
+}
